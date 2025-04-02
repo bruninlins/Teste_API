@@ -91,3 +91,8 @@ npm run serve
 
 1.	Basta abrir uma "collection" > "add a request".
 2.	Faça requisições GET para http://127.0.0.1:5000/buscar?q=operadora.
+
+Imagem da API funcionando:
+<div align="center">
+<img src="https://github.com/user-attachments/assets/cf11bf8f-67e4-4421-814b-efcfcb6ae6ca"
+</div>
