@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_mysqldb import MySQL
-import json  # Para manipular JSON corretamente
+import json
 
 app = Flask(__name__)
 
@@ -22,13 +22,11 @@ def buscar_operadora():
     query = "SELECT CNPJ, Razao_Social, Nome_Fantasia, Modalidade FROM relatorio_cadop WHERE Nome_Fantasia LIKE %s"
     cursor.execute(query, ('%' + termo_busca + '%',))
 
-    # Obtendo os resultados
     resultados = cursor.fetchall()
 
-    # Fechando a conexão
     cursor.close()
 
-    # Formatando os resultados corretamente
+    # Formatação dos resultados
     relatorio_cadop = [
         {
             'CNPJ': row[0],
